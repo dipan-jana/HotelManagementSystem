@@ -10,7 +10,7 @@ public class User {
     private static Scanner sc = new Scanner(System.in);
 
     public int getUserId() {
-        System.out.println("Enter the UserID: ");
+        System.out.print("\nEnter the UserID: ");
         userId = sc.nextInt();
         sc.nextLine();
         return userId;
@@ -22,7 +22,7 @@ public class User {
     }
 
     public String getName() {
-        System.out.print("\nEnter the User Name: ");
+        System.out.print("Enter the User Name: ");
         userName = sc.nextLine();
         return userName;
     }
@@ -34,7 +34,7 @@ public class User {
 
     public String getMobileNumber() {
 
-        System.out.print("\nEnter the Mobile Number: ");
+        System.out.print("Enter the Mobile Number: ");
         mobileNumber = sc.nextLine();
         return mobileNumber;
     }

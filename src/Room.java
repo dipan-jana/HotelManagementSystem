@@ -25,19 +25,19 @@ public class Room {
 
     public RoomType setRoom() {
         System.out.println("\nPress ");
-        System.out.println("\t 0 - To Book a SINGLE");
-        System.out.println("\t 1 - To Book a DOUBLE");
-        System.out.println("\t 2 - To Book a SUITE");
+        System.out.println("\t 1 - To Book a SINGLE");
+        System.out.println("\t 2 - To Book a DOUBLE");
+        System.out.println("\t 3 - To Book a SUITE");
         System.out.print("\nEnter the Room Choice: ");
         int choice = scanner.nextInt();
         scanner.nextLine();
 
         switch (choice) {
-            case 0:
-                return RoomType.SINGLE;
             case 1:
-                return RoomType.DOUBLE;
+                return RoomType.SINGLE;
             case 2:
+                return RoomType.DOUBLE;
+            case 3:
                 return RoomType.SUITE;
             default:
                 System.out.print("PLEASE ENTER A VALID CHOICE....");
